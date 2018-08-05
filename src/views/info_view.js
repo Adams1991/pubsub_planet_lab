@@ -1,4 +1,4 @@
-const PubSub = require('../../helpers/pub_sub.js');
+const PubSub = require('../helpers/pub_sub.js');
 
 const InfoView = function(container) {
   this.container = container;
@@ -44,7 +44,7 @@ InfoView.prototype.createList = function(planet) {
   const surfaceArea = this.createLi(
     `Surface Area: ${planet.surfaceArea} Earths`,
     list);
-  const volume = this.createLi(`Volume: ${planet.volume} Earths`, ist);
+  const volume = this.createLi(`Volume: ${planet.volume} Earths`, list);
   const gravity = this.createLi(`Gravity: ${planet.gravity}g`, list);
   const moons = this.createLi(`Moons: ${planet.moons}`, list);
 

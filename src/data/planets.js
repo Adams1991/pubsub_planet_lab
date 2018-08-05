@@ -12,7 +12,7 @@ const planets = [
   {
     name: 'Venus',
     orbit: 224.701,
-    day: -234.025,
+    day: 116,
     surfaceArea: 0.902,
     volume: 0.866,
     gravity: 0.904,
@@ -62,7 +62,7 @@ const planets = [
   {
     name: 'Uranus',
     orbit: 30688.5,
-    day: -0.718,
+    day: 0.718,
     surfaceArea: 15.91,
     volume: 63.086,
     gravity: 0.886,
