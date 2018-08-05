@@ -6,9 +6,9 @@ const PlanetsMenuView = function(menuItems) {
 
 PlanetsMenuView.prototype.bindEvents = function() {
   this.menuItems.forEach((menuItem) => {
-    menuItem.addEventListener('click', (evt) => {
-      const selectedPlanetName = evt.target.id;
-      PubSub.publish('PlanetsMenuView:selected', selectedPlanetName);
+    menuItem.addEventListener('click', (event) => {
+      const selectedPlanetName = event.target.id;
+      PubSub.publish('MenuView:selected', selectedPlanetName);
     });
   });
 };
